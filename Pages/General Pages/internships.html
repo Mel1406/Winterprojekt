@@ -2,9 +2,419 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Leoportal</title>
+    <link href="../../Assets/htllogo_small.png" rel="icon">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
+    <link href="../../Style%20Files/style_overall.css" rel="stylesheet">
+    <link href="../../Style%20Files/style_navbar.css" rel="stylesheet">
+    <link href="../../Style%20Files/style_internship.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="brand-img">
+            <img alt="HTL Leonding Logo" class="img-fluid" src="../../Assets/htllogo.png">
+        </a>
+        <button aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                class="navbar-toggler shadow-none border-1"
+                data-bs-target="#offcanvasNavbar" data-bs-toggle="offcanvas" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div aria-labelledby="offcanvasNavbarLabel" class="offcanvas offcanvas-end sidebar" id="offcanvasNavbar"
+             tabindex="-1">
+            <div class="offcanvas-header border-bottom">
+                <div id="logo">
+                    <img alt="Logo" class="img-fluid" src="../../Assets/htllogo_small.png">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Leoportal</h5>
+                </div>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3" id="nav">
+                    <li class="nav-item mx-2">
+                        <a aria-current="page" class="nav-link text-uppercase" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase active" href="internships.html">Praktika</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase" href="companies.html">Firmen</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase" href="about_me.html">About me</a>
+                    </li>
+                </ul>
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
+                     style="margin-right: 3%">
+                    <a class="text-black text-decoration-none" href="#login">Login</a>
+                    <a class="text-black text-decoration-none px-3 py-1 rounded-5" href="#signup"
+                       style="background: rgb(227,227,227)">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container text-normal-center" id="search-options">
+    <div class="row">
+        <div class="col">
+            <form class="d-flex" role="search">
+                <input aria-label="Search" class="form-control me-2" placeholder="Search" type="search">
+                <button class="btn btn-outline-success" type="submit"><img alt="magnifying glass"
+                                                                           class="img-fluid" height="20px"
+                                                                           src="../../Assets/magnifying-glass.png"
+                                                                           width="20px"></button>
+            </form>
+        </div>
+    </div>
 
+    <nav class="navbar navbar-expand-md row">
+        <div class="container-fluid">
+            <button aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler shadow-none border-1"
+                    data-bs-target="#navbarTogglerDemo01" data-bs-toggle="collapse" type="button">
+
+                <img alt="filter-img" class="img-fluid navbar-toggler-icon no-background-img"
+                     src="../../Assets/filter.png">
+            </button>
+            <div class="collapse navbar-collapse row gy-xl-0 gy-2" id="navbarTogglerDemo01">
+                <div class="nav-item col-xl-2 col-md-4 col-12 d-flex justify-content-md-center justify-content-start">
+                    <div class="btn-group dropdown-center border border-2">
+                        <button aria-expanded="false"
+                                class=" btn text-normal dropdown-toggle col-lg-3 col-5 d-flex align-items-center"
+                                data-bs-toggle="dropdown"
+                                type="button">
+                            ab Schulstufe
+                        </button>
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">1 Schulstufe</a></li>
+                            <li><a class="dropdown-item" href="#">2 Schulstufe</a></li>
+                            <li><a class="dropdown-item" href="#">3 Schulstufe</a></li>
+                            <li><a class="dropdown-item" href="#">4 Schulstufe</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-5 col-12 d-flex align-items-center nav-item">
+                    <div class="d-flex justify-content-center" style="width: 5%">
+                        <input class="form-check-input" id="flexCheckDefault" type="checkbox" value="">
+                    </div>
+                    <div>
+                        <label class="form-check-label text-center" for="flexCheckDefault" id="anzeige-angebote-stufen">
+                            Angebote für niedrigere Stufen anzeigen</label>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 col-12 d-flex justify-content-md-center justify-content-start nav-item">
+                    <div class="btn-group dropdown-center border border-2">
+                        <button aria-expanded="false" class="btn text-normal dropdown-toggle" data-bs-toggle="dropdown"
+                                type="button">
+                            Zweig
+                        </button>
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Informatik</a></li>
+                            <li><a class="dropdown-item" href="#">Medientechnik</a></li>
+                            <li><a class="dropdown-item" href="#">Medizintechnik</a></li>
+                            <li><a class="dropdown-item" href="#">Elektronik</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 col-8 nav-item">
+                    <div class=" d-flex justify-content-md-center justify-content-start">
+                        <label class="form-label text-center" for="customRange1">Mindestgehalt</label>
+                    </div>
+                    <input class="form-range " id="customRange1" max="2000" min="0" step="200" type="range">
+                </div>
+                <div class="col-xl-3 col-md-8 col-12 nav-item">
+                    <input class="form-control text-normal" id="inputCity" placeholder="Stadt" type="text">
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<table class="container table table-striped table-hover">
+    <tbody>
+    <tr class=" offer">
+        <td class="col-sm-3 col-4 justify-content-center d-flex align-items-center">
+            <div class="img-container">
+                <img class="img-fluid" src="../../Assets/Company%20Logos/MeliCorp_Logo.png">
+            </div>
+        </td>
+        <td class="col-sm-6 col-8 text-cont">
+            <div class="offer-header text-medium-big">
+                <a href="../Internships/internship_MeliCorp.html">IT-Praktikum</a>
+            </div>
+            <div class="company-name text-medium">
+                MeliCorp GmbH
+            </div>
+            <div class="text-normal offer-text">
+                MeliCorp bietet engagierten HTL-Schülern die Möglichkeit, in unserem dynamischen IT-Team ein Praktikum
+                zu absolvieren. Erhalte praxisnahe Einblicke in die Welt der Softwareentwicklung, arbeitet an realen
+                Projekten und vertiefe dein Wissen im Bereich IT-Lösungen.
+            </div>
+        </td>
+        <td class="col-sm-3 col-0 flex-column d-flex justify-content-center criteria-cont">
+            <ul>
+                <li class="criteria">1230€ brutto Gehalt</li>
+                <li class="criteria">Informatik</li>
+                <li class="criteria">ab der 3 Schulstufe</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class=" offer">
+        <td class="col-sm-3 col-4 justify-content-center d-flex align-items-center">
+            <div class="img-container">
+                <img class="img-fluid" src="../../Assets/Company%20Logos/MeliCorp_Logo.png">
+            </div>
+        </td>
+        <td class="col-sm-6 col-8 text-cont">
+            <div class="offer-header text-medium-big">
+                <a href="../Internships/internship_MeliCorp.html">IT-Praktikum</a>
+            </div>
+            <div class="company-name text-medium">
+                MeliCorp GmbH
+            </div>
+            <div class="text-normal offer-text">
+                MeliCorp bietet engagierten HTL-Schülern die Möglichkeit, in unserem dynamischen IT-Team ein Praktikum
+                zu absolvieren. Erhalte praxisnahe Einblicke in die Welt der Softwareentwicklung, arbeitet an realen
+                Projekten und vertiefe dein Wissen im Bereich IT-Lösungen.
+            </div>
+        </td>
+        <td class="col-sm-3 col-0 flex-column d-flex justify-content-center criteria-cont">
+            <ul>
+                <li class="criteria">1230€ brutto Gehalt</li>
+                <li class="criteria">Informatik</li>
+                <li class="criteria">ab der 3 Schulstufe</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class=" offer">
+        <td class="col-sm-3 col-4 justify-content-center d-flex align-items-center">
+            <div class="img-container">
+                <img class="img-fluid" src="../../Assets/Company%20Logos/MeliCorp_Logo.png">
+            </div>
+        </td>
+        <td class="col-sm-6 col-8 text-cont">
+            <div class="offer-header text-medium-big">
+                <a href="../Internships/internship_MeliCorp.html">IT-Praktikum</a>
+            </div>
+            <div class="company-name text-medium">
+                MeliCorp GmbH
+            </div>
+            <div class="text-normal offer-text">
+                MeliCorp bietet engagierten HTL-Schülern die Möglichkeit, in unserem dynamischen IT-Team ein Praktikum
+                zu absolvieren. Erhalte praxisnahe Einblicke in die Welt der Softwareentwicklung, arbeitet an realen
+                Projekten und vertiefe dein Wissen im Bereich IT-Lösungen.
+            </div>
+        </td>
+        <td class="col-sm-3 col-0 flex-column d-flex justify-content-center criteria-cont">
+            <ul>
+                <li class="criteria">1230€ brutto Gehalt</li>
+                <li class="criteria">Informatik</li>
+                <li class="criteria">ab der 3 Schulstufe</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class=" offer">
+        <td class="col-sm-3 col-4 justify-content-center d-flex align-items-center">
+            <div class="img-container">
+                <img class="img-fluid" src="../../Assets/Company%20Logos/MeliCorp_Logo.png">
+            </div>
+        </td>
+        <td class="col-sm-6 col-8 text-cont">
+            <div class="offer-header text-medium-big">
+                <a href="../Internships/internship_MeliCorp.html">IT-Praktikum</a>
+            </div>
+            <div class="company-name text-medium">
+                MeliCorp GmbH
+            </div>
+            <div class="text-normal offer-text">
+                MeliCorp bietet engagierten HTL-Schülern die Möglichkeit, in unserem dynamischen IT-Team ein Praktikum
+                zu absolvieren. Erhalte praxisnahe Einblicke in die Welt der Softwareentwicklung, arbeitet an realen
+                Projekten und vertiefe dein Wissen im Bereich IT-Lösungen.
+            </div>
+        </td>
+        <td class="col-sm-3 col-0 flex-column d-flex justify-content-center criteria-cont">
+            <ul>
+                <li class="criteria">1230€ brutto Gehalt</li>
+                <li class="criteria">Informatik</li>
+                <li class="criteria">ab der 3 Schulstufe</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class=" offer">
+        <td class="col-sm-3 col-4 justify-content-center d-flex align-items-center">
+            <div class="img-container">
+                <img class="img-fluid" src="../../Assets/Company%20Logos/MeliCorp_Logo.png">
+            </div>
+        </td>
+        <td class="col-sm-6 col-8 text-cont">
+            <div class="offer-header text-medium-big">
+                <a href="../Internships/internship_MeliCorp.html">IT-Praktikum</a>
+            </div>
+            <div class="company-name text-medium">
+                MeliCorp GmbH
+            </div>
+            <div class="text-normal offer-text">
+                MeliCorp bietet engagierten HTL-Schülern die Möglichkeit, in unserem dynamischen IT-Team ein Praktikum
+                zu absolvieren. Erhalte praxisnahe Einblicke in die Welt der Softwareentwicklung, arbeitet an realen
+                Projekten und vertiefe dein Wissen im Bereich IT-Lösungen.
+            </div>
+        </td>
+        <td class="col-sm-3 col-0 flex-column d-flex justify-content-center criteria-cont">
+            <ul>
+                <li class="criteria">1230€ brutto Gehalt</li>
+                <li class="criteria">Informatik</li>
+                <li class="criteria">ab der 3 Schulstufe</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class=" offer">
+        <td class="col-sm-3 col-4 justify-content-center d-flex align-items-center">
+            <div class="img-container">
+                <img class="img-fluid" src="../../Assets/Company%20Logos/MeliCorp_Logo.png">
+            </div>
+        </td>
+        <td class="col-sm-6 col-8 text-cont">
+            <div class="offer-header text-medium-big">
+                <a href="../Internships/internship_MeliCorp.html">IT-Praktikum</a>
+            </div>
+            <div class="company-name text-medium">
+                MeliCorp GmbH
+            </div>
+            <div class="text-normal offer-text">
+                MeliCorp bietet engagierten HTL-Schülern die Möglichkeit, in unserem dynamischen IT-Team ein Praktikum
+                zu absolvieren. Erhalte praxisnahe Einblicke in die Welt der Softwareentwicklung, arbeitet an realen
+                Projekten und vertiefe dein Wissen im Bereich IT-Lösungen.
+            </div>
+        </td>
+        <td class="col-sm-3 col-0 flex-column d-flex justify-content-center criteria-cont">
+            <ul>
+                <li class="criteria">1230€ brutto Gehalt</li>
+                <li class="criteria">Informatik</li>
+                <li class="criteria">ab der 3 Schulstufe</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class=" offer">
+        <td class="col-sm-3 col-4 justify-content-center d-flex align-items-center">
+            <div class="img-container">
+                <img class="img-fluid" src="../../Assets/Company%20Logos/MeliCorp_Logo.png">
+            </div>
+        </td>
+        <td class="col-sm-6 col-8 text-cont">
+            <div class="offer-header text-medium-big">
+                <a href="../Internships/internship_MeliCorp.html">IT-Praktikum</a>
+            </div>
+            <div class="company-name text-medium">
+                MeliCorp GmbH
+            </div>
+            <div class="text-normal offer-text">
+                MeliCorp bietet engagierten HTL-Schülern die Möglichkeit, in unserem dynamischen IT-Team ein Praktikum
+                zu absolvieren. Erhalte praxisnahe Einblicke in die Welt der Softwareentwicklung, arbeitet an realen
+                Projekten und vertiefe dein Wissen im Bereich IT-Lösungen.
+            </div>
+        </td>
+        <td class="col-sm-3 col-0 flex-column d-flex justify-content-center criteria-cont">
+            <ul>
+                <li class="criteria">1230€ brutto Gehalt</li>
+                <li class="criteria">Informatik</li>
+                <li class="criteria">ab der 3 Schulstufe</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class=" offer">
+        <td class="col-sm-3 col-4 justify-content-center d-flex align-items-center">
+            <div class="img-container">
+                <img class="img-fluid" src="../../Assets/Company%20Logos/MeliCorp_Logo.png">
+            </div>
+        </td>
+        <td class="col-sm-6 col-8 text-cont">
+            <div class="offer-header text-medium-big">
+                <a href="../Internships/internship_MeliCorp.html">IT-Praktikum</a>
+            </div>
+            <div class="company-name text-medium">
+                MeliCorp GmbH
+            </div>
+            <div class="text-normal offer-text">
+                MeliCorp bietet engagierten HTL-Schülern die Möglichkeit, in unserem dynamischen IT-Team ein Praktikum
+                zu absolvieren. Erhalte praxisnahe Einblicke in die Welt der Softwareentwicklung, arbeitet an realen
+                Projekten und vertiefe dein Wissen im Bereich IT-Lösungen.
+            </div>
+        </td>
+        <td class="col-sm-3 col-0 flex-column d-flex justify-content-center criteria-cont">
+            <ul>
+                <li class="criteria">1230€ brutto Gehalt</li>
+                <li class="criteria">Informatik</li>
+                <li class="criteria">ab der 3 Schulstufe</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class=" offer">
+        <td class="col-sm-3 col-4 justify-content-center d-flex align-items-center">
+            <div class="img-container">
+                <img class="img-fluid" src="../../Assets/Company%20Logos/MeliCorp_Logo.png">
+            </div>
+        </td>
+        <td class="col-sm-6 col-8 text-cont">
+            <div class="offer-header text-medium-big">
+                <a href="../Internships/internship_MeliCorp.html">IT-Praktikum</a>
+            </div>
+            <div class="company-name text-medium">
+                MeliCorp GmbH
+            </div>
+            <div class="text-normal offer-text">
+                MeliCorp bietet engagierten HTL-Schülern die Möglichkeit, in unserem dynamischen IT-Team ein Praktikum
+                zu absolvieren. Erhalte praxisnahe Einblicke in die Welt der Softwareentwicklung, arbeitet an realen
+                Projekten und vertiefe dein Wissen im Bereich IT-Lösungen.
+            </div>
+        </td>
+        <td class="col-sm-3 col-0 flex-column d-flex justify-content-center criteria-cont">
+            <ul>
+                <li class="criteria">1230€ brutto Gehalt</li>
+                <li class="criteria">Informatik</li>
+                <li class="criteria">ab der 3 Schulstufe</li>
+            </ul>
+        </td>
+    </tr>
+    <tr class=" offer">
+        <td class="col-sm-3 col-4 justify-content-center d-flex align-items-center">
+            <div class="img-container">
+                <img class="img-fluid" src="../../Assets/Company%20Logos/MeliCorp_Logo.png">
+            </div>
+        </td>
+        <td class="col-sm-6 col-8 text-cont">
+            <div class="offer-header text-medium-big">
+                <a href="../Internships/internship_MeliCorp.html">IT-Praktikum</a>
+            </div>
+            <div class="company-name text-medium">
+                MeliCorp GmbH
+            </div>
+            <div class="text-normal offer-text">
+                MeliCorp bietet engagierten HTL-Schülern die Möglichkeit, in unserem dynamischen IT-Team ein Praktikum
+                zu absolvieren. Erhalte praxisnahe Einblicke in die Welt der Softwareentwicklung, arbeitet an realen
+                Projekten und vertiefe dein Wissen im Bereich IT-Lösungen.
+            </div>
+        </td>
+        <td class="col-sm-3 col-0 flex-column d-flex justify-content-center criteria-cont">
+            <ul>
+                <li class="criteria">1230€ brutto Gehalt</li>
+                <li class="criteria">Informatik</li>
+                <li class="criteria">ab der 3 Schulstufe</li>
+            </ul>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<script crossorigin="anonymous"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

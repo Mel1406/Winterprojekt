@@ -1,0 +1,57 @@
+#navbar{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: var(--bg-color-whiteish)!important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 2px;
+    height: 70px!important;
+}
+#brand-img{
+    margin-left: 1%;
+    margin-right: 3%;
+    width: 180px;
+}
+#brand-img a{
+    width: 100%;
+    height: auto;
+}
+#logo{
+    align-content: center;
+    display: flex;
+}
+#logo img{
+    width: 10%;
+    display: inline;
+}
+#logo h5{
+    width: fit-content;
+    display: inline;
+}
+#nav li{
+    justify-content: center;
+    display: flex;
+}
+#nav li a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: linear-gradient(to right, #0a529a, #86b5d7, #dc931a, #a2122a);
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+    position: relative;
+    display: block;
+}
+#nav li a:hover::after {
+    width: 100%;
+}
+#nav{
+    margin-right: 0!important;
+    padding-top: 9px;
+}
+#search-options-cont{
+    margin-top: 4rem;
+}
+
+#search-options-cont .row{
+    margin-top: 1.5rem;
+}

@@ -1,0 +1,45 @@
+:root{
+    --bg-color-whiteish: rgb(248, 248, 248);
+    --bg-color-grayish: rgb(239, 239, 239);
+    --fs-normal: 10px;
+    --fs-medium: 13px;
+    --fs-medium-big: 16px;
+}
+.text-normal{
+    font-size: var(--fs-normal);
+}
+.text-medium{
+    font-size: var(--fs-medium);
+
+}
+.text-medium-big{
+    font-size: var(--fs-medium-big);
+
+}
+.bg-whiteish{
+    background-color: var(--bg-color-whiteish);
+}
+body{
+    padding-top: 70px;
+    background-color: var(--bg-color-grayish);
+    width: 100vw;
+}
+.full-width{
+    min-width: 100%;
+}
+
+.z-index-1{
+    z-index: -100;
+}
+.z-index-2{
+    z-index: -10;
+}
+.z-index-3{
+    z-index: 1;
+}
+.z-index-4{
+    z-index: 10;
+}
+.position-relative{
+    position: relative;
+}
