@@ -5,6 +5,42 @@
     --fs-medium: 13px;
     --fs-medium-big: 16px;
 }
+@media (min-width: 576px)
+{
+    :root{
+        --fs-normal: 12px;
+        --fs-medium: 15px;
+        --fs-medium-big: 18px;
+    }
+}
+@media (min-width: 768px)
+{
+    :root{
+        --fs-normal: 14px;
+        --fs-medium: 17px;
+        --fs-medium-big: 20px;
+    }
+}
+@media (min-width: 992px)
+{
+    :root{
+        --fs-normal: 16px;
+        --fs-medium: 20px;
+        --fs-medium-big: 23px;
+    }
+}
+@media (min-width: 1200px)
+{
+    :root{
+
+    }
+}
+@media (min-width: 1400px)
+{
+    :root{
+
+    }
+}
 .text-normal{
     font-size: var(--fs-normal);
 }
@@ -23,6 +59,9 @@ body{
     padding-top: 70px;
     background-color: var(--bg-color-grayish);
     width: 100vw;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 .full-width{
     min-width: 100%;

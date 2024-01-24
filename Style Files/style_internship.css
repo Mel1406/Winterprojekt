@@ -1,18 +1,14 @@
 :root{
-    --height-offer: 11rem;
+    --height-offer: 8.5rem;
 }
+
 .no-background-img{
     background-image: none;
 }
 #anzeige-angebote-stufen{
     padding-left: 0.5rem;
 }
-#search-options{
-    background-color: var(--bg-color-whiteish);
 
-    margin-top: 1.5rem;
-    padding: 1rem;
-}
 
 #navbarTogglerDemo01{
     padding: 0.5rem 0 0.5rem 0;
@@ -24,62 +20,36 @@
     margin: 0.2rem 0 0.2rem 0!important;
 }
 /* styling for offers */
-.table {
-    --bs-table-striped-bg: rgba(167, 198, 218, 0.31);
-    --bs-table-bg: rgba(169, 196, 215, 0.14);
-    border-color: rgba(255, 255, 255, 0);
-}
+
 .offer {
-    margin-top: 2rem;
-    width: 100%;
     border-radius: 1rem;
-    display: flex;
-    height: var(--height-offer);
-    min-height: var(--height-offer);
     max-height: var(--height-offer);
-    overflow: hidden;
+    min-height: var(--height-offer);
+    hyphens: auto;
 }
 .offer td{
-    min-height: var(--height-offer);
-}
-.img-container{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    max-height: 80%;
-    margin-right: 0.5rem;
-    display: flex;
-    align-items: center;
+    max-height: var(--height-offer);
 }
 
-.text-cont{
-    padding-right: 2rem!important;
-}
-.offer-header {
-    margin-top: 0.5rem;
-}
-.offer-header:hover{
-    text-decoration: underline 2px;
-}
-.offer-header a{
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-}
 .company-name{
     color: rgba(0, 0, 0, 0.65);
     font-weight: bold;
     margin-bottom: 0.2rem;
 }
 .offer-text{
-    max-height: 5.8rem;
+    max-height: 4rem;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-right: 0.5rem;
 }
 .criteria-cont{
     max-width: 0;
     max-height: 0;
     display: none;
+}
+.criteria-cont ul{
+    margin: 0;
 }
 .criteria-cont  .criteria{
     font-size: 0;
@@ -89,19 +59,22 @@
 }
 @media (min-width: 576px)
 {
-    #search-options{
-        border-radius: 20px;
+    :root{
+        --height-offer: 11rem;
     }
-    .criteria-cont{
-        max-width: 10rem;
-        max-height: var(--height-offer);
 
+    .offer-text{
+        max-height: 5.6rem;
+    }
+
+    .criteria-cont{
+        max-width: 100%;
+        max-height: var(--height-offer);
     }
     .criteria-cont ul{
         margin: 0;
         padding: 0;
         list-style-type: disc;
-        list-style-position: inside;
     }
     .criteria-cont  .criteria{
         font-size: var(--fs-normal);
@@ -109,16 +82,6 @@
         max-width: 100%;
         display: list-item;
         margin: 0.5rem 0 0.5rem 0;
-    }
-
-    tr:nth-child(n) td:first-child {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-
-    tr:nth-child(n) td:last-child {
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
 }
 @media (min-width: 768px)
@@ -128,24 +91,9 @@
 
     }
 }
-@media (prefers-reduced-motion: no-preference) {
-    @supports (animation-timeline: view()) {
-        tr {
-            animation: fade-in linear;
-            /*noinspection CssInvalidFunction*/
-            animation-timeline: view();
-            animation-range: entry;
-        }
-    }
-}
-
-@keyframes fade-in {
-    from {
-        scale: 0.8;
-        opacity: 0;
-    }
-    to {
-        scale: 1;
-        opacity: 1
+@media(min-width: 992px)
+{
+    .offer-text{
+        max-height: 4.5rem;
     }
 }

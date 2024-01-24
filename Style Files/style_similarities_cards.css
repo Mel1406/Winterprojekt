@@ -1,0 +1,73 @@
+#search-options{
+    background-color: var(--bg-color-whiteish);
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+.table {
+    --bs-table-striped-bg: rgba(167, 198, 218, 0.31);
+    --bs-table-bg: rgba(169, 196, 215, 0.14);
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.img-container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    max-height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.text-cont{
+    padding-right: 2rem!important;
+}
+.offer-header {
+    margin-top: 0.5rem;
+}
+.offer-header:hover{
+    text-decoration: underline 2px;
+}
+.offer-header a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+@media (min-width: 576px)
+{
+    .offer{
+        margin-top: 2rem;
+    }
+    #search-options{
+        border-radius: 20px;
+    }
+    tr:nth-child(n) td:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    tr:nth-child(n) td:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}@media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+        tr {
+            animation: fade-in linear;
+            /*noinspection CssInvalidFunction*/
+            animation-timeline: view();
+            animation-range: entry;
+        }
+    }
+}
+
+@keyframes fade-in {
+    from {
+        scale: 0.8;
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        opacity: 1
+    }
+}
