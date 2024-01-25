@@ -1,8 +1,4 @@
-#search-options{
-    background-color: var(--bg-color-whiteish);
-    margin-top: 1.5rem;
-    padding: 1rem;
-}
+
 .table {
     --bs-table-striped-bg: rgba(167, 198, 218, 0.31);
     --bs-table-bg: rgba(169, 196, 215, 0.14);
@@ -37,9 +33,6 @@
 {
     .offer{
         margin-top: 2rem;
-    }
-    #search-options{
-        border-radius: 20px;
     }
     tr:nth-child(n) td:first-child {
         border-top-left-radius: 10px;
