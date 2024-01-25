@@ -9,16 +9,3 @@
         width: auto;
     }
 }
-.star-button{
-    margin-left: 0.5rem;
-    padding-top: 2px;
-    padding-bottom: 6px;
-}
-.star-button img{
-    max-height: 1.3rem;
-    background-image: url("../Assets/start.png");
-    filter: invert(36%) sepia(45%) saturate(481%) hue-rotate(82deg) brightness(89%) contrast(85%);
-}
-.star-button:hover img{
-    filter: invert(100%) sepia(5%) saturate(21%) hue-rotate(220deg) brightness(107%) contrast(105%);
-}
