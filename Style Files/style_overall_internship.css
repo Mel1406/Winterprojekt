@@ -1,11 +1,1 @@
-.company-logo{
-    height: 7rem;
-    width: auto;
-}
-@media (min-width: 576px)
-{
-    .company-logo{
-        height: 8rem;
-        width: auto;
-    }
-}
+

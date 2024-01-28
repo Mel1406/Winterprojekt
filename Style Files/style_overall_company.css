@@ -1,0 +1,15 @@
+
+.text{
+    margin-top: 1.8rem;
+}
+.divider{
+    min-height: 2rem;
+    max-height: 2rem;
+    margin-bottom: 2rem
+}
+@media (min-width: 576px)
+{
+    .divider{
+        margin-bottom: 0;
+    }
+}

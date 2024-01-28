@@ -98,3 +98,14 @@ body::-webkit-scrollbar {
 .star-button:hover img{
     filter: invert(100%) sepia(5%) saturate(21%) hue-rotate(220deg) brightness(107%) contrast(105%);
 }
+.company-logo{
+    height: 7rem;
+    width: auto;
+}
+@media (min-width: 576px)
+{
+    .company-logo{
+        height: 8rem;
+        width: auto;
+    }
+}
