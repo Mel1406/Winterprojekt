@@ -4,6 +4,7 @@
     --fs-normal: 10px;
     --fs-medium: 13px;
     --fs-medium-big: 16px;
+    --fs-big: 20px;
     --fs-header: 25px;
 }
 @media (min-width: 576px)
@@ -12,6 +13,7 @@
         --fs-normal: 12px;
         --fs-medium: 15px;
         --fs-medium-big: 18px;
+        --fs-big: 23px;
         --fs-header: 28px;
     }
     .gray-bg{
@@ -24,6 +26,7 @@
         --fs-normal: 14px;
         --fs-medium: 17px;
         --fs-medium-big: 20px;
+        --fs-big: 26px;
         --fs-header: 35px;
     }
 }
@@ -33,6 +36,7 @@
         --fs-normal: 16px;
         --fs-medium: 20px;
         --fs-medium-big: 23px;
+        --fs-big: 30px;
         --fs-header: 40px;
     }
 }
@@ -53,7 +57,9 @@
 }
 .text-medium-big{
     font-size: var(--fs-medium-big);
-
+}
+.text-big{
+    font-size: var(--fs-big);
 }
 .bg-whiteish{
     background-color: var(--bg-color-whiteish);

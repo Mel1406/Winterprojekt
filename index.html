@@ -59,24 +59,70 @@
         </div>
     </div>
 </nav>
-<div class="bg-whiteish full-width d-grid z-index-1 position-relative" style="height: 300px">
+<div class="bg-whiteish full-width d-grid z-index-3 position-relative" style="height: 96vh">
     <div class="abgeschrägtes-div z-index-2"></div>
     <div class="row">
-        <div class="col-6 d-flex align-items-center text-center z-index-3">
-            Die Praktikumswebsite für HTL Leonding Schüler*Innen
+        <div class="col-6 z-index-3 d-flex align-items-center justify-content-center">
+            <div class="text-center big-font-start">
+                Die Praktikumswebsite für HTL Leonding Schüler*Innen
+            </div>
         </div>
         <div class="col-6 z-index-3 d-flex align-items-center justify-content-center">
-            <div class="col-10">
-            <form class="d-flex" role="search">
-                <input aria-label="Search" class="form-control me-2" placeholder="Search" type="search">
-                <button class="btn btn-outline-success" type="submit"><img alt="magnifying glass"
-                                                                           class="img-fluid" height="20px"
-                                                                           src="Assets/magnifying-glass.png"
-                                                                           width="20px"></button>
-            </form>
-        </div>
+            <div class="col-9 bg-whiteish z-index-3 d-flex align-content-center" id="search-box">
+                <div class="container">
+                    <div class="row m-5">
+                        <div class="col-12">
+
+                            <label class="form-label text-center text-medium-big" for="search">Firmenname</label>
+                            <input aria-label="Search" class="form-control text-big" id="search" placeholder="Name"
+                                   type="search">
+
+
+                        </div>
+                    </div>
+                    <div class="row m-5">
+                        <div class="col-6 d-flex justify-content-center align-content-center">
+                            <select aria-label="Schulstufe auswahl"
+                                    class="form-select form-select-lg border border-2 text-big">
+                                <option selected>für alle Schulstufen</option>
+                                <option value="1">1 Schulstufe</option>
+                                <option value="2">2 Schulstufe</option>
+                                <option value="3">3 Schulstufe</option>
+                                <option value="4">4 Schulstufe</option>
+                            </select>
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-items-center">
+                            <select aria-label="Zweig auswahl"
+                                    class="form-select form-select-lg border border-2 text-big">
+                                <option selected>für alle Zweige</option>
+                                <option value="1">Informatik</option>
+                                <option value="2">Medientechnik</option>
+                                <option value="3">Medizintechnik</option>
+                                <option value="4">Elektronik</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row m-5">
+                        <div class="col-12">
+                            <label class="form-label text-center text-medium-big" for="inputCity">Firmenstandort</label>
+
+                            <input class="form-control text-big" id="inputCity" placeholder="Stadt/Ort" type="text">
+                        </div>
+                    </div>
+                    <div class="row m-5">
+                        <div class="col-12 d-flex justify-content-center">
+                        <button class="btn btn-outline-success submit" type="submit">Suchen<img alt="magnifying glass"
+                                                                                                class="img-fluid"
+                                                                                                src="Assets/magnifying-glass.png"
+                        ></button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
 </div>
 <script crossorigin="anonymous"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

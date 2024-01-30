@@ -84,25 +84,17 @@
             </button>
             <div class="collapse navbar-collapse row gy-xl-0 gy-2" id="navbarTogglerDemo01">
                 <div class="nav-item col-xl-2 col-md-4 col-12 d-flex justify-content-md-center justify-content-start">
-                    <div class="btn-group dropdown-center border border-2">
-                        <button aria-expanded="false"
-                                class=" btn text-normal dropdown-toggle col-lg-3 col-5 d-flex align-items-center"
-                                data-bs-toggle="dropdown"
-                                type="button">
-                            ab Schulstufe
-                        </button>
-                        <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">1 Schulstufe</a></li>
-                            <li><a class="dropdown-item" href="#">2 Schulstufe</a></li>
-                            <li><a class="dropdown-item" href="#">3 Schulstufe</a></li>
-                            <li><a class="dropdown-item" href="#">4 Schulstufe</a></li>
-                        </ul>
-                    </div>
+
+                    <select class="form-select border border-2" aria-label="Schulstufe auswahl">
+                        <option selected>für alle Schulstufen</option>
+                        <option value="1">1 Schulstufe</option>
+                        <option value="2">2 Schulstufe</option>
+                        <option value="3">3 Schulstufe</option>
+                        <option value="4">4 Schulstufe</option>
+                    </select>
                 </div>
 
-                <div class="col-xl-3 col-md-5 col-12 d-flex align-items-center nav-item">
+                <div class="col-xl-3 col-md-4 col-12 d-flex align-items-center nav-item">
                     <div class="d-flex justify-content-center" style="width: 5%">
                         <input class="form-check-input" id="flexCheckDefault" type="checkbox" value="">
                     </div>
@@ -111,21 +103,14 @@
                             Angebote für niedrigere Stufen anzeigen</label>
                     </div>
                 </div>
-                <div class="col-xl-2 col-md-3 col-12 d-flex justify-content-md-center justify-content-start nav-item">
-                    <div class="btn-group dropdown-center border border-2">
-                        <button aria-expanded="false" class="btn text-normal dropdown-toggle" data-bs-toggle="dropdown"
-                                type="button">
-                            Zweig
-                        </button>
-                        <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Informatik</a></li>
-                            <li><a class="dropdown-item" href="#">Medientechnik</a></li>
-                            <li><a class="dropdown-item" href="#">Medizintechnik</a></li>
-                            <li><a class="dropdown-item" href="#">Elektronik</a></li>
-                        </ul>
-                    </div>
+                <div class="col-xl-2 col-md-4 col-12 d-flex justify-content-md-center justify-content-start nav-item">
+                    <select class="form-select border border-2" aria-label="Zweig auswahl">
+                        <option selected>für alle Zweige</option>
+                        <option value="1">Informatik</option>
+                        <option value="2">Medientechnik</option>
+                        <option value="3">Medizintechnik</option>
+                        <option value="4">Elektronik</option>
+                    </select>
                 </div>
                 <div class="col-xl-2 col-md-4 col-8 nav-item">
                     <div class=" d-flex justify-content-md-center justify-content-start">
@@ -134,7 +119,7 @@
                     <input class="form-range " id="customRange1" max="2000" min="0" step="200" type="range">
                 </div>
                 <div class="col-xl-3 col-md-8 col-12 nav-item">
-                    <input class="form-control text-normal" id="inputCity" placeholder="Stadt" type="text">
+                    <input class="form-control text-normal" id="inputCity" placeholder="Stadt/Ort" type="text">
                 </div>
             </div>
         </div>
