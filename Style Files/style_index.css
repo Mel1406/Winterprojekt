@@ -28,13 +28,10 @@ body::-webkit-scrollbar {
     }
     #search-box{
         margin-left: 2rem;
-
     }
     .submit{
-
         font-size: 3rem;
         height: 6.5rem
-
     }
 }
 #container{
@@ -58,7 +55,7 @@ body::-webkit-scrollbar {
 }
 
 #search-box{
-    height: 45vh;
+    min-height: 45vh;
     border-radius: 40px;
     padding: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.43) 3px 5px 10px 3px;
@@ -82,4 +79,10 @@ body::-webkit-scrollbar {
 .container{
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+.description{
+    font-size: var(--fs-normal)
+}
+.content{
+    font-size: var(--fs-normal)
 }
