@@ -1,21 +1,37 @@
 .abgeschrägtes-div {
-    height: 96vh;
-    background: linear-gradient(to right, rgb(182, 209, 227), rgba(134, 181, 215, 0.23));
-    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%);
+    height: min-content;
+    min-height: 93vh;
     position: absolute;
-    width: 70%;
     justify-self: end;
+    background: linear-gradient(to right, rgb(182, 209, 227), rgba(134, 181, 215, 0.23));
+    width: 100%;
+}
+@media (min-width: 1200px)
+{
+    .abgeschrägtes-div {
 
+        clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%);
+        width: 70%
+    }
+    .big-font-start{
+        margin-right: 3rem;
+        margin-bottom: 3rem;
+        line-height: 6rem!important;
+        max-width: 80%;
+        font-size: 3rem!important;
+    }
+}
+#container{
+    height: min-content;
+    min-height: 93vh;
 }
 
 .big-font-start{
-    font-size: 6rem;
+    hyphens: auto;
+    font-size: 1.5rem;
     font-weight: bold;
-    max-width: 80%;
-    line-height: 9rem;
+    line-height: 4rem;
     letter-spacing: 0.5rem;
-    margin-bottom: 3rem;
-    margin-right: 9rem;
     text-shadow: rgba(0, 0, 0, 0.2) 5px 5px 3px;
 }
 
