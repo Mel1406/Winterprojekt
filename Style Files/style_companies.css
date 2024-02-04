@@ -16,7 +16,7 @@
     height: var(--height-offer2);
 }
 .offer-text{
-    max-height: 4rem;
+    max-height: 3.8rem;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -25,9 +25,15 @@
 @media (min-width: 576px)
 {
     .offer-text{
-        max-height: 8rem;
+        max-height: 5.3rem;
     }
     :root{
         --height-offer2: 10rem;
+    }
+}
+@media (min-width: 1000px)
+{
+    .offer-text{
+        max-height: 6rem;
     }
 }
