@@ -22,6 +22,7 @@
 /* styling for offers */
 
 .offer {
+    overflow: hidden;
     border-radius: 1rem;
     max-height: var(--height-offer);
     min-height: var(--height-offer);
@@ -37,7 +38,7 @@
     margin-bottom: 0.2rem;
 }
 .offer-text{
-    max-height: 4rem;
+    max-height: 3.8rem;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -78,7 +79,7 @@
         right: 15px;
     }
     .offer-text{
-        max-height: 5.6rem;
+        max-height: 5.5rem;
     }
 
     .criteria-cont{
