@@ -4,6 +4,9 @@
     background-color: var(--bg-color-whiteish)!important;
     box-shadow: rgba(0, 0, 0, 0.1) 0 3px 2px;
 }
+.nav-link{
+    font-size: 20px;
+}
 #brand-img{
     margin-left: 1%;
     margin-right: 3%;

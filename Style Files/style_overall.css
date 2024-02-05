@@ -40,6 +40,8 @@
         --fs-header: 40px;
     }
 }
+
+
 .gray-bg{
     background-color: var(--bg-color-whiteish);
     margin-top: 1.5rem;
