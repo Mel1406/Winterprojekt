@@ -2,9 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Leoportal</title>
+    <link href="../../Assets/htllogo_small.png" rel="icon">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
+    <link href="../../Style%20Files/style_overall.css" rel="stylesheet">
+    <link href="../../Style%20Files/style_navbar.css" rel="stylesheet">
+    <link href="../../Style%20Files/style_overall_internship.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="brand-img">
+            <img alt="HTL Leonding Logo" class="img-fluid" src="../../Assets/htllogo.png">
+        </a>
+        <button aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                class="navbar-toggler shadow-none border-1"
+                data-bs-target="#offcanvasNavbar" data-bs-toggle="offcanvas" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div aria-labelledby="offcanvasNavbarLabel" class="offcanvas offcanvas-end sidebar" id="offcanvasNavbar"
+             tabindex="-1">
+            <div class="offcanvas-header border-bottom">
+                <div id="logo">
+                    <img alt="Logo" class="img-fluid" src="../../Assets/htllogo_small.png">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Leoportal</h5>
+                </div>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3" id="nav">
+                    <li class="nav-item mx-2">
+                        <a aria-current="page" class="nav-link text-uppercase" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase active" href="../../Pages/General%20Pages/internships.html">Praktika</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase" href="../../Pages/General%20Pages/companies.html">Firmen</a>
+                    </li>
 
+                </ul>
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-1"
+                     style="margin-right: 3%">
+                    <a class="text-black text-decoration-none nav-link" href="#login">Login</a>
+                    <a class="text-black text-decoration-none px-3 py-1 rounded-5" href="#profile">
+                        <img src="../../Assets/PiktogrammAccount.svg" class="img-fluid" alt="account piktogramm">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row gray-bg d-flex justify-content-center">
+        <div class="col-10 d-flex justify-content-start align-items-center">
+            <button class="btn btn-success btn-sm text-medium" type="button">Bewirb dich jetzt</button>
+            <button class="btn btn-sm text-medium star-button btn-outline-success" type="button"><img
+                    alt="like icon" class="img-fluid" src="../../Assets/start.png"></button>
+        </div>
+        <div class="col-2 d-flex justify-content-end align-items-center">
+            <a href="../General%20Pages/internships.html">
+                <button aria-label="Close" class="btn-close" type="button"></button>
+            </a>
+        </div>
+        <div class="col-12 d-flex justify-content-center company-logo">
+            <img alt="Carla & Co Logo" class="img-fluid" src="../../Assets/Company%20Logos/ElyseeIndustries_Logo.png">
+        </div>
+        <div class="col-12 text-header text-start text-lg-center">
+            Praktikum bei Elysee Industries: Deine Chance in der Welt der Solartechnologie
+        </div>
+        <div class="col-lg-8 col-12 text-medium text-lg-center text-start">
+            Elysee Industries, ein führendes Unternehmen in der Entwicklung modernster Solaranlagen, öffnet die Türen für leidenschaftliche und zukunftsorientierte Talente, die ihre Fähigkeiten in einem dynamischen Umfeld entfalten möchten. Wir bieten ein Praktikum im Bereich Solartechnologie an und suchen engagierte Praktikanten, die gemeinsam mit uns die Grenzen der erneuerbaren Energien erkunden wollen.
+        </div>
+    </div>
+    <div class="row gray-bg text-medium">
+        <div class="col-12 col-lg-5 m-3">
+            <b>Generelle Informationen:</b>
+            <ul>
+                <li><b>Praktikumszeitraum:</b><br> von Juni bis September</li>
+                <li><b>Praktikumsdauer:</b> <br>mindestens 4 Wochen</li>
+                <li><b>Filialenstandort:</b><br>Steyr</li>
+                <li><b>Gehalt:</b> <br>1180€ brutto Gehalt</li>
+
+            </ul>
+        </div>
+        <div class="col-12 col-lg-6 m-3">
+            <b>Deine Aufgaben:</b><br>
+
+            <ul>
+                <li>KUnterstützung bei der Installation und Wartung von Solaranlagen.</li>
+                <li> Mitarbeit bei der elektrischen Verkabelung und dem Anschluss von Solarstromanlagen.</li>
+                <li> Zusammenarbeit mit erfahrenen Elektrikern und Ingenieuren, um die Effizienz unserer Anlagen zu gewährleisten.
+                </li>
+                <li> Fehleranalyse und Unterstützung bei der Behebung von elektrischen Störungen.</li>
+                <li>Einhaltung von Sicherheitsstandards und Qualitätskontrolle.</li>
+            </ul>
+
+        </div>
+        <div class="col-12 col-lg-5 m-3">
+            <b>Anforderungen:</b><br>
+            <ul>
+                <li>Schüler in einer HTL mit Kenntnissen in der Elektronik</li>
+                <li>Interesse an Solartechnologie und erneuerbaren Energien.
+                </li>
+                <li> Grundlegende Kenntnisse im Bereich Elektrotechnik.</li>
+                <li> Teamgeist, Kommunikationsfähigkeit und eine proaktive Arbeitsweise.</li>
+            </ul>
+        </div>
+        <div class="col-12 col-lg-6 m-3">
+            <b>Was wir bieten:</b>
+            <ul>
+                <li> Einblicke in die Welt der Solartechnologie und erneuerbaren Energien.</li>
+                <li> Praxisnahe Erfahrungen in einem führenden Unternehmen der Branche.</li>
+                <li>Zusammenarbeit mit einem engagierten Team von Fachleuten.</li>
+                <li>Fortschrittliche Technologien und Werkzeuge im Bereich der Solartechnik.</li>
+                <li>Die Möglichkeit, einen Beitrag zu einer nachhaltigen Zukunft zu leisten.</li>
+            </ul>
+        </div>
+
+        <div class="col-12 justify-self m-3">
+            <b>Bewerbungsinformationen:</b><br>
+            Wenn du bereit bist, in die Welt der Solartechnologie einzutauchen und an unserer Mission teilzunehmen, sende bitte deine vollständigen Bewerbungsunterlagen, einschließlich Lebenslauf, Zeugnisse und einem kurzen Motivationsschreiben, an career@elyseeindustries.com. Teile uns mit, warum du dich für das Praktikum bei Elysee Industries interessierst und welche Qualifikationen du mitbringst.
+            <br><br>
+            Wir freuen uns darauf, motivierte Praktikanten willkommen zu heißen und gemeinsam die Zukunft der erneuerbaren Energien zu gestalten. Bei Fragen zur Bewerbung stehen wir gerne zur Verfügung.
+        </div>
+    </div>
+</div>
+<script crossorigin="anonymous"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

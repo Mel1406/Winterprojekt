@@ -2,9 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Leoportal</title>
+    <link href="../../Assets/htllogo_small.png" rel="icon">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
+    <link href="../../Style%20Files/style_overall.css" rel="stylesheet">
+    <link href="../../Style%20Files/style_navbar.css" rel="stylesheet">
+    <link href="../../Style%20Files/style_internship.css" rel="stylesheet">
+    <link href="../../Style%20Files/style_similarities_cards.css" rel="stylesheet">
+    <link href="../../Style%20Files/style_overall_company.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="brand-img">
+            <img alt="HTL Leonding Logo" class="img-fluid" src="../../Assets/htllogo.png">
+        </a>
+        <button aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                class="navbar-toggler shadow-none border-1"
+                data-bs-target="#offcanvasNavbar" data-bs-toggle="offcanvas" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div aria-labelledby="offcanvasNavbarLabel" class="offcanvas offcanvas-end sidebar" id="offcanvasNavbar"
+             tabindex="-1">
+            <div class="offcanvas-header border-bottom">
+                <div id="logo">
+                    <img alt="Logo" class="img-fluid" src="../../Assets/htllogo_small.png">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Leoportal</h5>
+                </div>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3" id="nav">
+                    <li class="nav-item mx-2">
+                        <a aria-current="page" class="nav-link text-uppercase" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase" href="../General%20Pages/internships.html">Praktika</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-uppercase active" href="../General%20Pages/companies.html">Firmen</a>
+                    </li>
 
+                </ul>
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-1"
+                     style="margin-right: 3%">
+                    <a class="text-black text-decoration-none nav-link" href="#login">Login</a>
+                    <a class="text-black text-decoration-none px-3 py-1 rounded-5" href="#profile">
+                        <img alt="account piktogramm" class="img-fluid" src="../../Assets/PiktogrammAccount.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row gray-bg d-flex justify-content-center">
+        <div class="col-12 d-flex justify-content-end align-items-center">
+            <a href="../General%20Pages/companies.html">
+                <button aria-label="Close" class="btn-close" type="button"></button>
+            </a>
+        </div>
+        <div class="col-12 d-flex justify-content-center company-logo">
+            <img alt="MeliCorp Logo" class="img-fluid" src="../../Assets/Company%20Logos/ElyseeIndustries_Logo.png">
+        </div>
+        <div class="col-12 text-header text-start text-lg-center">
+            Elysee Industries: Gestalter einer Grünen Zukunft durch Solartechnologie
+        </div>
+        <div class="col-12 text-medium text-start text">
+            Willkommen bei Elysee Industries, einem Vorreiter in der Entwicklung hochmoderner Solaranlagen. Unsere
+            Mission ist es, die Welt durch nachhaltige Energiequellen zu transformieren und innovative Lösungen für eine
+            grüne Zukunft zu schaffen. Hier gewähren wir einen Einblick in unsere Firma.
+        </div>
+        <div class="col-12 text-medium text-start text">
+            <b>Vision:</b> <br>
+            Elysee Industries verfolgt die Vision, durch wegweisende Solartechnologien einen positiven Beitrag zur
+            globalen Energieversorgung zu leisten. Unser Streben nach Exzellenz und Umweltbewusstsein treibt uns dazu
+            an, nachhaltige Energielösungen zu entwickeln, die eine nachhaltige und saubere Zukunft ermöglichen.
+        </div>
+        <div class="col-12 text-medium text-start text">
+            <b>Kultur:</b> <br>
+            In unserer Arbeitskultur bei Elysee Industries setzen wir auf Innovation, Teamarbeit und Nachhaltigkeit.
+            Unser Team besteht aus leidenschaftlichen Fachleuten, die sich gemeinsam für den Fortschritt in der
+            Solartechnologie einsetzen. Wir fördern eine Atmosphäre offener Kommunikation und individueller
+            Weiterentwicklung, um gemeinsam die Herausforderungen der Zukunft anzugehen.
+            <br>
+            Die Arbeit bei Elysee Industries bedeutet nicht nur, beruflich voranzukommen, sondern auch einen wirklichen
+            Einfluss auf die Umwelt und die Entwicklung grüner Technologien zu haben.
+        </div>
+        <div class="col-12 text-medium text-start text">
+            <b>Technologische Exzellenz:</b> <br>
+            Elysee Industries setzt auf modernste Technologien, um Spitzenleistungen in der Solartechnologie zu
+            erreichen. Unsere Investitionen in Forschung und Entwicklung ermöglichen es uns, unseren Kunden effiziente
+            und zuverlässige Lösungen zu bieten. Wir legen Wert auf kontinuierliche Weiterbildung, um stets an der
+            Spitze der sich weiterentwickelnden Solartechnologie zu stehen.
+        </div>
+        <div class="col-12 text-medium text-start text">
+            <b>Praktikumsmöglichkeiten:</b> <br>
+            Wir suchen Schüler einer HTL mit Elektronikschwerpunkt, die unser dynamisches Team bereichern möchten. In
+            der Position als Elektriker für Solaranlagentechnik wirst du eine entscheidende Rolle bei der Installation,
+            Wartung und Optimierung unserer modernen Solaranlagen spielen.
+        </div>
+        <div class="col-12 text-medium text-start text">
+            <b>Bewerbungsinformationen:</b> <br>
+            Bitte sende uns deine aussagekräftigen Bewerbungsunterlagen, einschließlich Lebenslauf, Zeugnisse und einem
+            Motivationsschreiben, in dem du erläuterst, warum du dich für die Position als Elektriker für
+            Solaranlagentechnik bei Elysee Industries interessierst und wie deine Qualifikationen zu unseren
+            Anforderungen passen.
+            <br>
+            Wir freuen uns darauf, mehr über dich zu erfahren und die Möglichkeit zu haben, gemeinsam die Zukunft der
+            Solartechnologie zu gestalten.
+        </div>
+    </div>
+    <div class="row border-bottom border-4 divider">
+    </div>
+    <table class="table table-striped">
+        <tr class="row offer">
+            <td class="col-sm-3 col-4 justify-content-center d-flex align-items-center">
+                <div class="img-container">
+                    <img alt="Elysee Industries Logo" class="img-fluid" src="../../Assets/Company%20Logos/ElyseeIndustries_Logo.png">
+                </div>
+            </td>
+            <td class="col-sm-6 col-8 text-cont">
+                <button class="btn btn-sm text-medium star-button btn-outline-success" type="button"><img
+                        alt="like icon" class="img-fluid" src="../../Assets/start.png"></button>
+                <div class="offer-header text-medium-big">
+                    <a href="../Internships/internship_MeliCorp.html">Elektriker-Praktikum</a>
+                </div>
+                <div class="col-12 company-name text-medium">
+                    Elysee Industries AG
+                </div>
+                <div class="col-12 text-normal offer-text">
+                    Elysee Industries, ein führendes Unternehmen in der Entwicklung modernster Solaranlagen, öffnet die Türen für leidenschaftliche und zukunftsorientierte Talente, die ihre Fähigkeiten in einem dynamischen Umfeld entfalten möchten. Wir bieten ein Praktikum im Bereich Solartechnologie an und suchen engagierte Praktikanten, die gemeinsam mit uns die Grenzen der erneuerbaren Energien erkunden wollen.
+                </div>
+            </td>
+            <td class="col-sm-3 flex-column d-flex justify-content-center criteria-cont">
+                <ul>
+                    <li class="criteria">1180€ brutto Gehalt</li>
+                    <li class="criteria">Elektroniker</li>
+                    <li class="criteria">ab der 3 Schulstufe</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+<script crossorigin="anonymous"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
