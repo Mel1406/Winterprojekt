@@ -70,6 +70,7 @@ body{
     padding-top: 60px;
     background-color: var(--bg-color-grayish);
     width: 100vw;
+    margin-bottom: 5rem;
 }
 body::-webkit-scrollbar {
     display: none;
