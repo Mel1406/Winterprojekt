@@ -1,7 +1,9 @@
 body::-webkit-scrollbar {
     display: none;
 }
-
+body{
+    margin-bottom: 0;
+}
 .abgeschrägtes-div {
     height: min-content;
     min-height: calc(100vh - 60px);
