@@ -116,7 +116,7 @@
     .star-button{
         min-width: 2rem;
         min-height: 2rem;
-        padding: 0rem;
+        padding: 0;
     }
     .star-button img{
         margin-bottom: 0.3rem;
