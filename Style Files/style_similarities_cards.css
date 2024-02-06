@@ -48,7 +48,9 @@
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-}@media (prefers-reduced-motion: no-preference) {
+}
+
+@media (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: view()) {
         tr {
             animation: fade-in linear;
